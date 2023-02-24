@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Poppins:wght@300;600;700&display=swap");
+.header {
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  /* opacity: 0.8; */
+  background-size: cover;
+  background-image: url("http://localhost:3000/images/bg-hero.png");
+}
+
+.navbar__ul li {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.SiteName {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.herotext {
+  font-size: 72px;
+}
+
+.iright > * {
+  position: absolute;
+}
+.iright > :nth-child(2) {
+  right: 8.5rem;
+  top: 3.5rem;
+}
+
+.iright > :nth-child(4) {
+  left: -5rem;
+  top: 25px;
+}
+
+.rocketAnimation {
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 14%;
+  }
+  50% {
+    top: 2%;
+  }
+  100% {
+    top: 14%;
+  }
+}
+
+.underLineAnimation {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.underLineAnimation:hover,
+.underLineAnimation:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  background: white;
+}
+
+.mainCircle * {
+  transform: scale(0.7);
+}
+
+.mainCircle > :nth-child(1) {
+  top: 0;
+  position: absolute;
+}
+
+.processBG {
+  background: rgb(245, 245, 245);
+  height: auto;
+  width: 100%;
+}
+
+.iframe {
+  filter: grayscale(1) contrast(1.2) opacity(0.4);
+}
+
+.overlay {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+}
+.ulImageItem {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ListItemImage {
+  height: 40vh;
+  flex-grow: 1;
+  padding: 10px;
+}
+.galleryImages {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
